@@ -50,7 +50,7 @@ public func print<Target>(_ items: Any..., separator: String = default, terminat
 _ //忽略符，这里用于隐去外部参数名 
 inout //还记得传址参数的概念么，该关键字就是用来表明这种行为的。
 Any //public typealias Any = protocol<> ,Swift中任何类型（如Int、String、Struct、Enum...）都会遵循这个协议，反过来说Any可以用来表示任何类型。
-
+... //表示可变参数
 //eg: (to output: inout Target) 关于内部参数名和外部参数名
 // to 是外部参数名，表示外部在调用此函数时必须显式的携带to这个参数名。
 // output 是内部参数名，表示函数实体内部使用此参数名进行调用。 
